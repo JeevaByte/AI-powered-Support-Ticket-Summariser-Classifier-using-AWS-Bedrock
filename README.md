@@ -2,7 +2,7 @@
 
 An intelligent support ticket analysis system powered by AWS Bedrock (Amazon Nova Pro model) that automatically summarizes, categorizes, and prioritizes customer support tickets.
 
-## 🚀 Features
+##  Features
 
 - **AI-Powered Analysis**: Uses Amazon Nova Pro model via AWS Bedrock for intelligent ticket analysis
 - **Automatic Classification**: Categorizes tickets (technical, billing, account, etc.)
@@ -13,14 +13,14 @@ An intelligent support ticket analysis system powered by AWS Bedrock (Amazon Nov
 - **CloudWatch Integration**: Application logging and monitoring
 - **Auto-scaling Ready**: Systemd service with automatic restart
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - AWS Account with Bedrock access
 - Python 3.9+ (Python 3.11 recommended)
 - AWS CLI configured
 - boto3, watchtower Python packages
 
-## 🛠️ Local Setup
+##  Local Setup
 
 1. **Clone the repository**
 ```bash
@@ -126,7 +126,7 @@ Content-Type: application/json
 }
 ```
 
-## 🏗️ Architecture
+##  Architecture
 
 - **Compute**: AWS EC2 (t3.micro) running Amazon Linux 2023
 - **AI Model**: Amazon Nova Pro via AWS Bedrock Runtime
@@ -136,7 +136,7 @@ Content-Type: application/json
 - **Monitoring**: CloudWatch Logs for application logging
 - **Service Management**: Systemd for automatic restart and management
 
-## 🔒 Security
+##  Security
 
 - ✅ IAM role-based authentication (no hardcoded credentials)
 - ✅ Security group restricts access to specific IP addresses
@@ -144,7 +144,7 @@ Content-Type: application/json
 - ✅ No sensitive data stored in logs
 - ✅ Credentials excluded from Git via .gitignore
 
-## 🧪 Testing
+##  Testing
 
 Run the included test script:
 ```bash
@@ -156,7 +156,7 @@ This will test:
 - Bedrock model connectivity
 - Ticket analysis functionality
 
-## 📊 AWS Resources Created
+##  AWS Resources Created
 
 - VPC (10.0.0.0/16)
 - Public Subnet
@@ -167,7 +167,7 @@ This will test:
 - IAM Role and Instance Profile
 - CloudWatch Log Groups
 
-## 💰 Cost Estimation
+##  Cost Estimation
 
 - **EC2 t3.micro**: ~$0.0104/hour (~$7.50/month)
 - **Bedrock Nova Pro**: Pay per token (varies by usage)
@@ -176,7 +176,7 @@ This will test:
 
 **Estimated monthly cost**: $10-20 for light usage
 
-## 🗑️ Cleanup
+## Cleanup
 
 Delete the CloudFormation stack to remove all resources:
 ```bash
@@ -185,7 +185,7 @@ aws cloudformation delete-stack \
   --region eu-west-2
 ```
 
-## 📝 Configuration
+##  Configuration
 
 Key configuration variables in `app.py`:
 - `REGION`: AWS region (default: eu-west-2)
@@ -193,7 +193,7 @@ Key configuration variables in `app.py`:
 - `PORT`: HTTP port (default: 8080)
 - `MAX_TICKET_LENGTH`: Maximum ticket size (default: 5000 chars)
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions welcome! Please:
 1. Fork the repository
@@ -202,16 +202,16 @@ Contributions welcome! Please:
 4. Push to the branch
 5. Create a Pull Request
 
-## 📄 License
+##  License
 
 MIT License - see LICENSE file for details
 
-## 👤 Author
+##  Author
 
 **JeevaByte**
 - GitHub: [@JeevaByte](https://github.com/JeevaByte)
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - AWS Bedrock team for the Nova Pro model
 - Amazon Linux team for the base AMI
