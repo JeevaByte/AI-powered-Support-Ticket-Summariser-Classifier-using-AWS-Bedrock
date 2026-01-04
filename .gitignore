@@ -1,0 +1,61 @@
+# AWS Credentials and Secrets
+*.pem
+*.key
+*.credentials
+.aws/
+credentials
+config
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Logs
+*.log
+logs/
+bedrock-app-logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test outputs
+output.json
+result.json
+ssm-cmd.json
+
+# Sensitive data
+*.tfvars
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
